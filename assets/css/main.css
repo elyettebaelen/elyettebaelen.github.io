@@ -106,24 +106,29 @@ input, select, textarea {
 
 
 	html {
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 	*, *:before, *:after {
-		-webkit-box-sizing: inherit;
-		        box-sizing: inherit;
+		box-sizing: inherit;
 	}
 
 	body {
-		background-color: #009aad;
+		background-color: #009aad; 
+		background-image: url("images/overlay.png"), -moz-linear-gradient(-45deg, #2E5A73 15%,#009aad 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(-45deg,#2E5A73 15%, #009aad 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(-45deg,#2E5A73 15%, #009aad 85%);
 		background-image: url("images/overlay.png"), linear-gradient(-45deg,#2E5A73 15%, #009aad 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
 			-webkit-animation: none !important;
+			-ms-animation: none !important;
 			animation: none !important;
+			-moz-transition: none !important;
 			-webkit-transition: none !important;
+			-ms-transition: none !important;
 			transition: none !important;
 		}
 
@@ -166,7 +171,9 @@ input, select, textarea {
 		}
 
 	a {
+		-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
+		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
 		border-bottom: dotted 1px;
@@ -344,14 +351,12 @@ input, select, textarea {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
 		align-items: stretch;
 	}
 
 		.row > * {
-			-webkit-box-sizing: border-box;
-			        box-sizing: border-box;
+			box-sizing: border-box;
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -589,14 +594,12 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
+				box-sizing: border-box;
 				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -836,14 +839,12 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
+				box-sizing: border-box;
 				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1083,14 +1084,12 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
+				box-sizing: border-box;
 				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1330,14 +1329,12 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
+				box-sizing: border-box;
 				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1577,14 +1574,12 @@ input, select, textarea {
 			.row {
 				display: flex;
 				flex-wrap: wrap;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
+				box-sizing: border-box;
 				align-items: stretch;
 			}
 
 				.row > * {
-					-webkit-box-sizing: border-box;
-					        box-sizing: border-box;
+					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
@@ -1855,7 +1850,9 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 8px;
 		border: 0;
@@ -1878,8 +1875,7 @@ input, select, textarea {
 .firstButton {
 	-webkit-appearance: none;
     -ms-appearance: none;
-    -moz-appearance: none;
-	     appearance: none;
+    appearance: none;
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     border-radius: 8px;
@@ -1966,8 +1962,7 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		-webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-		        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
 		color: #ffffff !important;
 	}
 
@@ -2004,8 +1999,7 @@ input, select, textarea {
 			color: #ffffff !important;
 			font-size: 1.0em;
 			font-weight: bold;
-			-webkit-box-shadow: none;
-			        box-shadow: none;
+			box-shadow: none;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2076,8 +2070,7 @@ input, select, textarea {
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
-			-webkit-box-shadow: none;
-			        box-shadow: none;
+			box-shadow: none;
 		}
 
 	select {
@@ -2212,8 +2205,7 @@ input, select, textarea {
 		select:focus,
 		textarea:focus {
 			border-color: #8cc9f0;
-			-webkit-box-shadow: 0 0 0 1px #8cc9f0;
-			        box-shadow: 0 0 0 1px #8cc9f0;
+			box-shadow: 0 0 0 1px #8cc9f0;
 		}
 
 	select {
@@ -2246,8 +2238,7 @@ input, select, textarea {
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
 		border-color: #8cc9f0;
-		-webkit-box-shadow: 0 0 0 1px #8cc9f0;
-		        box-shadow: 0 0 0 1px #8cc9f0;
+		box-shadow: 0 0 0 1px #8cc9f0;
 	}
 
 	::-webkit-input-placeholder {
@@ -2274,7 +2265,9 @@ input, select, textarea {
 
 	.icon {
 		text-decoration: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: none;
 		position: relative;
@@ -2533,6 +2526,7 @@ input, select, textarea {
 
 	ul.actions {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		cursor: default;
@@ -2548,6 +2542,7 @@ input, select, textarea {
 
 		ul.actions.special {
 			-moz-justify-content: center;
+			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 100%;
@@ -2560,6 +2555,7 @@ input, select, textarea {
 
 		ul.actions.stacked {
 			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
@@ -2579,8 +2575,11 @@ input, select, textarea {
 
 			ul.actions.fit li {
 				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
 				-ms-flex-grow: 1;
 				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
 				-ms-flex-shrink: 1;
 				flex-shrink: 1;
 				width: 100%;
@@ -2598,6 +2597,7 @@ input, select, textarea {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
 				margin-left: 0;
@@ -2606,8 +2606,11 @@ input, select, textarea {
 
 				ul.actions:not(.fixed) li {
 					-moz-flex-grow: 1;
+					-webkit-flex-grow: 1;
 					-ms-flex-grow: 1;
 					flex-grow: 1;
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					padding: 1em 0 0 0;
@@ -2824,11 +2827,15 @@ input, select, textarea {
 
 	.features {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		-moz-justify-content: center;
+		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
 		width: calc(100% + 2em);
@@ -2887,6 +2894,7 @@ input, select, textarea {
 
 	.statistics {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		width: 100%;
@@ -2898,6 +2906,7 @@ input, select, textarea {
 
 		.statistics li {
 			-moz-flex: 1;
+			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
 			padding: 1.5em;
@@ -2994,9 +3003,11 @@ input, select, textarea {
 
 	.spotlight {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		-moz-align-items: center;
+		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2em 0;
@@ -3004,6 +3015,7 @@ input, select, textarea {
 
 		.spotlight .content {
 			-moz-flex: 1;
+			-webkit-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
 		}
@@ -3034,6 +3046,7 @@ input, select, textarea {
 
 			.spotlight {
 				-moz-flex-direction: column-reverse;
+				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
 				text-align: center;
@@ -3041,6 +3054,7 @@ input, select, textarea {
 
 				.spotlight .content {
 					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
 					-ms-flex: 0 1 auto;
 					flex: 0 1 auto;
 					width: 100%;
@@ -3053,6 +3067,7 @@ input, select, textarea {
 
 					.spotlight .content .actions {
 						-moz-justify-content: center;
+						-webkit-justify-content: center;
 						-ms-justify-content: center;
 						justify-content: center;
 						width: calc(100% + 1em);
@@ -3060,6 +3075,7 @@ input, select, textarea {
 
 				.spotlight .image {
 					-moz-flex: 0 1 auto;
+					-webkit-flex: 0 1 auto;
 					-ms-flex: 0 1 auto;
 					flex: 0 1 auto;
 					margin-left: 0;
@@ -3109,19 +3125,25 @@ input, select, textarea {
 			}
 
 			#header.alt > * {
+				-moz-transition: opacity 0.5s ease;
 				-webkit-transition: opacity 0.5s ease;
+				-ms-transition: opacity 0.5s ease;
 				transition: opacity 0.5s ease;
+				-moz-transition-delay: 0.5s;
 				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
 				transition-delay: 0.5s;
 				opacity: 1;
 			}
 
 			#header.alt .logo {
+				-moz-transition: opacity 1.0s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 1.0s ease, -webkit-transform 0.5s ease;
-				transition: opacity 1.0s ease, -webkit-transform 0.5s ease;
+				-ms-transition: opacity 1.0s ease, -ms-transform 0.5s ease;
 				transition: opacity 1.0s ease, transform 0.5s ease;
-				transition: opacity 1.0s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+				-moz-transition-delay: 0s;
 				-webkit-transition-delay: 0s;
+				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				display: block;
 				margin: 0 0 1.5em 0;
@@ -3212,14 +3234,18 @@ input, select, textarea {
 		}
 
 		body.is-preload #header.alt .logo {
+			-moz-transform: scale(0.8) rotate(-30deg);
 			-webkit-transform: scale(0.8) rotate(-30deg);
+			-ms-transform: scale(0.8) rotate(-30deg);
 			transform: scale(0.8) rotate(-30deg);
 		}
 
 /* Nav */
 
 	#nav {
+		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
 		color: #636363;
@@ -3274,7 +3300,9 @@ input, select, textarea {
 		}
 
 			#nav ul li {
+				-moz-transition: margin 0.2s ease;
 				-webkit-transition: margin 0.2s ease;
+				-ms-transition: margin 0.2s ease;
 				transition: margin 0.2s ease;
 				display: inline-block;
 				margin: 0 0.35em;
@@ -3283,7 +3311,9 @@ input, select, textarea {
 			}
 
 				#nav ul li a {
+					-moz-transition: font-size 0.2s ease;
 					-webkit-transition: font-size 0.2s ease;
+					-ms-transition: font-size 0.2s ease;
 					transition: font-size 0.2s ease;
 					display: inline-block;
 					height: 2.25em;
@@ -3291,8 +3321,7 @@ input, select, textarea {
 					padding: 0 1.25em;
 					border: 0;
 					border-radius: 8px;
-					-webkit-box-shadow: inset 0 0 0 1px transparent;
-					        box-shadow: inset 0 0 0 1px transparent;
+					box-shadow: inset 0 0 0 1px transparent;
 				}
 
 					#nav ul li a:hover {
@@ -3301,8 +3330,7 @@ input, select, textarea {
 
 					#nav ul li a.active {
 						background-color: #ffffff;
-						-webkit-box-shadow: none;
-						        box-shadow: none;
+						box-shadow: none;
 					}
 
 		#nav.alt {
@@ -3382,8 +3410,7 @@ input, select, textarea {
 		#main button,
 		#main .button {
 			background-color: transparent;
-			-webkit-box-shadow: inset 0 0 0 1px #dddddd;
-			        box-shadow: inset 0 0 0 1px #dddddd;
+			box-shadow: inset 0 0 0 1px #dddddd;
 			color: #636363 !important;
 		}
 
@@ -3418,8 +3445,7 @@ input, select, textarea {
 			#main .button.primary {
 				background-color: #8cc9f0;
 				color: #ffffff !important;
-				-webkit-box-shadow: none;
-				        box-shadow: none;
+				box-shadow: none;
 			}
 
 				#main input[type="submit"].primary:hover,
@@ -3465,8 +3491,7 @@ input, select, textarea {
 			#main select:focus,
 			#main textarea:focus {
 				border-color: #8cc9f0;
-				-webkit-box-shadow: 0 0 0 1px #8cc9f0;
-				        box-shadow: 0 0 0 1px #8cc9f0;
+				box-shadow: 0 0 0 1px #8cc9f0;
 			}
 
 		#main select {
@@ -3499,8 +3524,7 @@ input, select, textarea {
 		#main input[type="checkbox"]:focus + label:before,
 		#main input[type="radio"]:focus + label:before {
 			border-color: #8cc9f0;
-			-webkit-box-shadow: 0 0 0 1px #8cc9f0;
-			        box-shadow: 0 0 0 1px #8cc9f0;
+			box-shadow: 0 0 0 1px #8cc9f0;
 		}
 
 		#main ::-webkit-input-placeholder {
@@ -3554,7 +3578,9 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -webkit-gradient(linear, left top, right top, from(#efa8b0), color-stop(#a89cc8), to(#8cc9f0));
+			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 		}
 
@@ -3689,8 +3715,11 @@ input, select, textarea {
 
 	#footer {
 		display: -moz-flex;
+		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
