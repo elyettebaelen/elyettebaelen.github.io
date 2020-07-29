@@ -6,148 +6,38 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Elyette Baelen Osteopathe D.O Templemars Douai">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/bootstrap-grid.css" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+		</script>
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 </head>
+<script>
+	$(function () {
+		$("#header").load("../header.html");
+		$("#nav").load("../nav.html");
+		$("#footer").load("../footer.html");
+		$(".content-nourisson-bebe").load("../nourisson-bebe/content-nourisson-bebe.html");
+		window.onload = function () {
+			$(".title-nourrisson").append("Carvin")
+		};
+	});
+</script>
 
 <body class="is-preload">
 
 	<!-- Wrapper -->
 	<div id="wrapper">
-
 		<!-- Header -->
-		<header id="header" class="alt">
-			<span class="logo"><img src="images/osteopathe_baelen_templemars_flers_douai.jpg"
-					alt="osteopathe baelen templemars flers douai 59800" /></span>
-			<h1>Elyette Baelen - Ostéopathe D.O</h1>
-			<h2>06.16.54.03.30</h2>
-			<h3>Flers-en-Escrebieux | Templemars</h3>
-			<a href="https://www.doctolib.fr/osteopathe/calais/elyette-baelen" target="_blank" class="firstButton">Prendre RDV
-				sur Doctolib</a>
-		</header>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173938862-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-
-			gtag('config', 'UA-173938862-1');
-		</script>
-
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><a href="../#intro" class="active">Introduction</a></li>
-				<li><a href="../#first">Motifs</a></li>
-				<li><a href="../#second">Une séance</a></li>
-				<li><a href="../#third">Les cabinets</a></li>
-				<li><a href="../#four">Tarif</a></li>
-				<li><a href="../#cta">Rendez-vous !</a></li>
-			</ul>
-		</nav>
-
+		<header id="header" class="alt"></header>
+		<nav id="nav"></nav>
 		<!-- Main -->
-		<div id="main">
-			<section id="intro" class="main">
-				<div class="spotlight">
-					<div class="content">
-						<header class="major">
-							<h2>Nourisson bébé - Carvin</h2>
-						</header>
-						<span class="image"><img class="test" src="images/osteopathe_nourisson_templemars_douai.jpg"
-								alt="osteopathe nourisson templemars douai" /></span>
-
-						<h3>Nourisson</h3>
-						<p class="tabulation">L’ostéopathie est une thérapie manuelle douce qui s’adresse à tous et en particulier
-							aux bébés qui subissent des traumatismes lors de la vie intra utérine, lors de l’accouchement et au cours
-							des premiers mois de la vie.</p>
-						<p class="tabulation">
-							La grossesse (position in utéro) et la naissance (problèmes survenus lors de l’accouchement) peuvent être
-							les causes de traumatismes physiques et émotionnels pour les bébés.
-							Ces phénomènes conduisent à différents motifs de consultation répondant aux champs de compétence de
-							l’ostéopathe.
-						</p>
-						<p class="text-left-p">
-
-							<b>Motifs de consultation :</b><br> <br>
-							&bull; Prématurité<br>
-							&bull; Accouchement compliqué<br>
-							&bull; Trouble de la succion, difficulté d’allaitement<br>
-							&bull; Bébé agité <br>
-							&bull; Troubles du sommeil<br>
-							&bull; Des pleurs incessants<br>
-							&bull; Déformation du crâne <br>
-							&bull; Torticolis<br>
-							&bull; Otites<br>
-							&bull; Douleurs de coliques <br>
-							&bull; Régurgitation <br>
-							&bull; Constipation <br>
-							&bull; Retard psycho- moteur<br>
-							&bull; Bilan ostéopathique préventif
-						</p>
-					</div>
-				</div>
-			</section>
-		</div>
-
+		<div id="main" class="content-nourisson-bebe"></div>
 		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<h2>Contact</h2>
-				<form method="POST" action="https://formspree.io/osteopathe.baelen@gmail.com">
-					<input type="email" name="name" placeholder="Ton nom">
-					<input type="email" name="name" placeholder="Ton prénom">
-					<input type="email" name="email" placeholder="Ton email">
-					<textarea name="message" placeholder="Ton message"></textarea>
-					<button type="button">Envoyer</button>
-				</form>
-			</section>
-			<section>
-				<h2>Adresse</h2>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.309482124746!2d3.078988615660891!3d50.39806967946815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2cf695579c847%3A0x330bc14ab6b368e2!2sElyette%20BAELEN%20-%20Ost%C3%A9opathe%20D.O%20-%20Escrebieux%20Sant%C3%A9!5e0!3m2!1sfr!2sfr!4v1596026306584!5m2!1sfr!2sfr"
-					frameborder="0" style="border:0" allowfullscreen></iframe>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.580382638025!2d3.0503184156677334!3d50.57916507949328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5e3b7d003a9%3A0x945907ac33b1461f!2sElyette%20BAELEN%20-%20Ost%C3%A9opathe%20D.O%20-%20Templemars!5e0!3m2!1sfr!2sfr!4v1596026238993!5m2!1sfr!2sfr"
-					frameborder="0" style="border:0" allowfullscreen></iframe>
-				<h2>Coordonnées</h2>
-				<dl class="alt">
-					<dt>Adresse</dt>
-					<dd>Maison Médicale Escrebieux Santé</dd>
-					<dd>7, rue du Général Leclerc</dd>
-					<dd>59128 Flers-en-Escrebieux</dd>
-					<dd><a href="https://www.escrebieuxsante.com/" target="_blank"><img style="width: 70%" alt="escrebieux sante"
-								src="images/flers.png"></dd>
-					<dt>Adresse</dt>
-					<a title="1 Rue du Maréchal Leclerc, 59175 Templemars" href="https://g.page/elyettebaelenosteopathe?share">
-						<dd>Cabinet d'ostéopathie et de Kinésithérapie Templemars</dd>
-						<dd>1 Rue du Maréchal Leclerc, Templemars</dd>
-						<dd>59175 Templemars</dd>
-					</a>
-					<dt>Téléphone</dt>
-					<dd><a href="tel:06 16 54 03 30">06 16 54 03 30</a></dd>
-					<dt>Email</dt>
-					<dd><a href="mailto:osteopathe.baelen@gmail.com">osteopathe.baelen@gmail.com</a></dd>
-				</dl>
-			</section>
-			<p class="copyright">&copy; Elyette Baelen, 2020.</p>
-			<!-- <a title="site map" class="copyright" href="/sitemap.html">Plan du site</a> -->
-		</footer>
-
+		<footer id="footer"> </footer>
 	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
 
 </body>
 
