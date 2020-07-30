@@ -23,10 +23,11 @@
 		$("#header").load("/header.html");
 		$("#nav").load("/nav.html");
 		$("#footer").load("/footer.html");
-		$(".content").load("/osteopathe-templemars/content-osteopathe.html");
-		window.onload = function () {
+		$(".content").load("/osteopathe-templemars/content-osteopathe.html", function () {
 			$(".title-cabinet").append("Vendeville")
-		};
+			$(".description-cabinet").append("Situé aux portes de Lille et à proximité de la commune de Vendeville, le nouveau cabinet de Templemars vous accueille sur rendez-vous du lundi au samedi.")
+			$(".prendre-rendez-vous").append("Vous souhaitez consulter Elyette Baelen, Diplômée en Ostéopathie (D.O) de l’Institut Supérieur d’Ostéopathie de Lille ? Contactez le cabinet de Templemars près de Vendeville au 06 16 54 03 30.")
+		});
 	});
 </script>
 
